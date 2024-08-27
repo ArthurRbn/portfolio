@@ -5,7 +5,7 @@
   "my_projects": "MES PROJETS",
   "presentation": "SALUT ! JE SUIS ARTHUR ROBINE",
   "presentation_role": "DÉVELOPPEUR WEB",
-  "presentation_text": "Créer des solutions web élégantes avec un souci de simplicité et de fonctionnalité.",
+  "presentation_text": "Je créé des solutions web élégantes avec un souci de simplicité et de fonctionnalité.",
   "presentation_description": "Je considère le développement web comme une opportunité de résoudre des problèmes concrets en créant des solutions efficaces et accessibles. Grâce à mes expériences variées, j'ai appris à m'adapter aux besoins spécifiques de chaque projet et à m'engager pleinement dans l'amélioration continue de mes compétences. J'aime explorer de nouvelles technologies pour rester à jour et proposer des solutions modernes, adaptées à chaque défi.",
   "jan": "Janvier",
   "feb": "Février",
@@ -19,6 +19,7 @@
   "oct": "Octobre",
   "nov": "Novembre",
   "dec": "Décembre",
+  "currently": "Aujourd'hui",
   "teaching-assistant-description": "En tant qu'Accompagnateur Pédagogique à Strasbourg, je suis responsable du suivi des étudiants de première, deuxième et troisième année. Mon rôle inclut l'encadrement des activités pédagogiques et la notation des projets.",
   "teaching-assistant-tags": [
     "Encadrement Pédagogique",

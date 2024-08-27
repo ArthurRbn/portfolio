@@ -27,15 +27,15 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ name, description, tags
   };
 
   return (
-    <div className="relative p-10 max-w-[75%] ml-24 mr-auto mt-20">
+    <div className="relative p-0 xl:p-10 max-w-[90%] xl:max-w-[75%] ml-auto xl:ml-24 mr-auto mt-8 xl:mt-20">
       <div className="flex flex-col items-start">
         <div className="flex flex-row items-start">
-          <img src={decorationArrow} className="w-10 h-auto mr-3" alt="Redirect arrow" />
-          <h1 className="font-title text-primary-text text-5xl font-bold mb-4">{name}</h1>
+          <img src={decorationArrow} className="w-4 xl:w-10 h-auto mr-3" alt="Redirect arrow" />
+          <h1 className="font-title text-primary-text text-2xl xl:text-5xl leading-4 xl:leading-10 font-bold mb-4">{name}</h1>
         </div>
-        <div className="ml-6 relative flex flex-row items-start">
-          <p className="ml-8 text-primary-text text-lg">{description}</p>
-          <div className="absolute left-0 top-0 bottom-0 w-4 bg-primary-accent"></div>
+        <div className="ml-2 xl:ml-6 relative flex flex-row items-start w-[80vw]">
+          <p className="ml-7 xl:ml-8 text-primary-text text-lg text-justify">{description}</p>
+          <div className="absolute left-0 top-0 bottom-0 w-2 xl:w-4 bg-primary-accent"/>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ name, description, tags
         </Slider>
       </div>
 
-      <div className="flex flex-row justify-center space-x-4">
+      <div className="flex flex-row justify-center justify-evenly flex-wrap">
         {tags.map((tag, index) => (
           <div className="bg-secondary-dark text-primary-accent text-sm rounded-full px-3 py-1" key={index}>
             <Tag text={tag}/>

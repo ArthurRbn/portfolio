@@ -5,7 +5,7 @@
   "my_projects": "MY PROJECTS",
   "presentation": "HI ! I'M ARTHUR ROBINE",
   "presentation_role": "WEB DEVELOPER",
-  "presentation_text": "Crafting elegant web solutions with a focus on simplicity and functionality.",
+  "presentation_text": "I create elegant web solutions with a focus on simplicity and functionality.",
   "presentation_description": "I see web development as an opportunity to solve real-world problems by creating effective and accessible solutions. My varied experiences have taught me to adapt to the specific needs of each project and to commit to continuously improving my skills. I enjoy exploring new technologies to stay current and deliver modern solutions tailored to each challenge.",
   "jan": "January",
   "feb": "February",
@@ -19,6 +19,7 @@
   "oct": "October",
   "nov": "November",
   "dec": "December",
+  "currently": "Currently",
   "teaching-assistant-description": "As a Pedagogical Coordinator in Strasbourg, I am responsible for guiding first, second, and third-year students. My role includes supervising pedagogical activities and grading projects.",
   "teaching-assistant-tags": [
     "Pedagogical Supervision",
