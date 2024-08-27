@@ -2,7 +2,6 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import decorationArrow from '/assets/illustrations/arrow_white.svg';
 import ExperienceItem from "./ExperienceItem.tsx";
-import Tag from "./Tag.tsx";
 
 const Experiences: React.FC = () => {
   const {t} = useTranslation();

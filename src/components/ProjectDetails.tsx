@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from "react";
 import Slider from "react-slick";
-import Modal from 'react-modal';
+import Modal from "react-modal";
 import decorationArrow from "/assets/illustrations/arrow_white.svg";
 import Tag from "./Tag.tsx";
-import { useTranslation } from "react-i18next";
 
 interface ProjectDetailsProps {
   name: string;

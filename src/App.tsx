@@ -1,4 +1,3 @@
-import React from 'react'
 import dotCloud1 from '/assets/illustrations/dot_cloud_1.svg'
 import dotCloud2 from '/assets/illustrations/dot_cloud_2.svg'
 import flowers from '/assets/illustrations/flowers.png'
@@ -56,7 +55,7 @@ function App() {
         <SideIllustration
           key={index}
           src={item.path}
-          styles={item.styles}
+          styles={item.styles ?? ''}
         />
       ))}
       <div className="flex flex-row justify-end w-full pr-5 xl:pr-10 pt-5 xl:pt-10">
