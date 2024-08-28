@@ -59,19 +59,21 @@ function App() {
         />
       ))}
       <div className="flex flex-row justify-end w-full pr-5 xl:pr-10 pt-5 xl:pt-10">
-        <HeaderLink text={'experiences'}/>
-        <HeaderLink text={'my_projects'}/>
+        <HeaderLink text={'experiences'} targetId={"experiences-section"}/>
+        <HeaderLink text={'my_projects'} targetId={"projects-section"}/>
       </div>
       <Presentation/>
 
       <SocialNetworks/>
       <Experiences/>
-      <ProjectDetails
-        name={t('calendify-title')}
-        description={t('calendify-description')}
-        tags={t('calendify-tags', {returnObjects: true})}
-        carouselURLs={["/assets/calendify/calendify-1.png", "/assets/calendify/calendify-2.png", "/assets/calendify/calendify-3.png", "/assets/calendify/calendify-4.png"]}
-      />
+      <div id="projects-section">
+        <ProjectDetails
+          name={t('calendify-title')}
+          description={t('calendify-description')}
+          tags={t('calendify-tags', {returnObjects: true})}
+          carouselURLs={["/assets/calendify/calendify-1.png", "/assets/calendify/calendify-2.png", "/assets/calendify/calendify-3.png", "/assets/calendify/calendify-4.png"]}
+        />
+      </div>
       <div className="my-20 flex flex-row justify-center">
         <TranslationTester/>
       </div>

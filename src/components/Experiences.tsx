@@ -7,7 +7,7 @@ const Experiences: React.FC = () => {
   const {t} = useTranslation();
 
   return (
-    <div className="relative mt-16 xl:mt-32 ml-auto xl:ml-[90px] mr-auto flex flex-col max-w-[90%] xl:max-w-[70%]">
+    <div id="experiences-section" className="relative mt-16 xl:mt-32 ml-auto xl:ml-[90px] mr-auto flex flex-col max-w-[90%] xl:max-w-[70%]">
       <div className="flex flex-row">
         <img
           src={decorationArrow}

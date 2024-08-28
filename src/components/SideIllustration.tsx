@@ -10,7 +10,7 @@ const SideIllustration: React.FC<SideIllustrationProps> = ({ src, styles }) => {
   return (
     <img
       src={src}
-      className={'absolute ' + ' ' + styles}
+      className={'absolute ' + styles}
       alt="Illustration"
     />
   );
