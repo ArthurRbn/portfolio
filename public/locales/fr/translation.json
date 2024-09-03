@@ -6,7 +6,7 @@
   "presentation": "SALUT ! JE SUIS ARTHUR ROBINE",
   "presentation_role": "DÉVELOPPEUR WEB",
   "presentation_text": "Je créé des solutions web élégantes avec un souci de simplicité et de fonctionnalité.",
-  "presentation_description": "Je considère le développement web comme une opportunité de résoudre des problèmes concrets en créant des solutions efficaces et accessibles. Grâce à mes expériences variées, j'ai appris à m'adapter aux besoins spécifiques de chaque projet et à m'engager pleinement dans l'amélioration continue de mes compétences. J'aime explorer de nouvelles technologies pour rester à jour et proposer des solutions modernes, adaptées à chaque défi.",
+  "presentation_description": "Je considère le développement web comme une opportunité de résoudre des <strong>problèmes concrets</strong> en créant des solutions <strong>efficaces</strong> et <strong>accessibles</strong>. Grâce à mes expériences variées, j'ai appris à <strong>m'adapter</strong> aux besoins spécifiques de chaque projet et à m'engager pleinement dans l'amélioration continue de mes compétences. J'aime explorer de nouvelles technologies pour rester à jour et proposer des <strong>solutions modernes</strong>, adaptées à chaque défi.",
   "jan": "Janvier",
   "feb": "Février",
   "mar": "Mars",
@@ -20,14 +20,14 @@
   "nov": "Novembre",
   "dec": "Décembre",
   "currently": "Aujourd'hui",
-  "teaching-assistant-description": "En tant qu'Accompagnateur Pédagogique à Strasbourg, je suis responsable du suivi des étudiants de première, deuxième et troisième année. Mon rôle inclut l'encadrement des activités pédagogiques et la notation des projets.",
+  "teaching-assistant-description": "En tant que <strong>Accompagnateur Pédagogique</strong> à Strasbourg, je suis responsable du suivi des étudiants de première, deuxième et troisième année. Mon rôle inclut l'<strong>encadrement des activités pédagogiques</strong> et la <strong>notation des projets</strong>.",
   "teaching-assistant-tags": [
     "Encadrement Pédagogique",
     "Notation de Projets",
     "Suivi des Étudiants",
     "Strasbourg"
   ],
-  "yanport-description": "En tant que Développeur Fullstack chez Yanport, j'ai intégré une équipe d'une dizaine de développeurs dédiée au développement et à la maintenance d'une application complexe comprenant cinq outils principaux. Mon rôle consistait principalement à intégrer de nouvelles fonctionnalités basées sur des maquettes en étroite collaboration avec le product owner, tout en assurant la correction de bugs et le traitement de tickets, que ce soit via des outils internes ou Zendesk. J'ai également contribué à l'amélioration continue de l'infrastructure CI/CD, permettant ainsi des déploiements plus rapides et plus fiables. De plus, j'ai travaillé sur l'amélioration de la codebase en réalisant des refactorisations pour assurer une meilleure maintenabilité du code. L'ensemble de ces tâches a été réalisé en suivant une méthodologie agile. Mon environnement technique comprenait principalement Angular, Angular Material, Typescript, Cypress, et Java, des technologies que j'ai utilisées pour livrer des solutions robustes et adaptées aux besoins des agents immobiliers, qui sont la cible principale des solutions data et logicielles proposées par Yanport.",
+  "yanport-description": "En tant que <strong>Développeur Fullstack</strong> chez <strong>Yanport</strong>, j'ai fait partie d'une équipe de dix développeurs dédiée au développement et à la maintenance d'une application complexe avec cinq outils principaux. Mon rôle impliquait l'<strong>intégration de nouvelles fonctionnalités</strong> en collaboration avec le product owner, la correction de <strong>bugs</strong>, et le traitement de <strong>tickets</strong> via des outils internes et Zendesk. J'ai également contribué à <strong>améliorer l'infrastructure CI/CD</strong> pour des déploiements plus rapides et fiables, et à refactoriser le code pour une meilleure maintenabilité. Le tout a été réalisé en suivant une <strong>méthodologie agile</strong>, avec <strong>Angular, Angular Material, Typescript, Cypress,</strong> et <strong>Java</strong> pour livrer des solutions robustes adaptées aux agents immobiliers, la cible principale de Yanport.",
   "yanport-tags": [
     "Télétravail",
     "Angular",
@@ -36,7 +36,7 @@
     "Cypress",
     "CI / CD"
   ],
-  "cypios-description": "En tant que Développeur Frontend chez Cypios, j'ai intégré une équipe entièrement remote de quatre développeurs pour créer un produit en vue de son lancement. Mon travail consistait à intégrer de nouvelles fonctionnalités basées sur des maquettes, tout en suivant des méthodologies agiles. La stack technique incluait React.js, Material UI, Typescript, Formik, et Cypress.",
+  "cypios-description": "En tant que <strong>Développeur Frontend</strong> chez <strong>Cypios</strong>, j'ai rejoint une équipe <strong>remote</strong> de quatre développeurs pour créer une solution médicale destinée à améliorer le suivi du patient par le médecin dans le domaine de la cancérologie, en vue de son lancement. Mon travail consistait à <strong>intégrer de nouvelles fonctionnalités</strong> basées sur des maquettes, en suivant des <strong>méthodologies agiles</strong>. La stack technique incluait <strong>React.js, Material UI, Typescript, Formik,</strong> et <strong>Cypress</strong>.",
   "cypios-tags": [
     "Remote",
     "React.js",
@@ -45,7 +45,7 @@
     "Cypress",
     "Agile"
   ],
-  "epita-description": "En tant qu'Assistant Pédagogique à Epita, ma mission consistait à aider les étudiants sur leurs projets lors des permanences UNIX, en se concentrant sur le C et le Bash. Mes responsabilités incluaient de guider les étudiants dans l'implémentation de leurs projets et d'évaluer leur travail.",
+  "epita-description": "En tant qu'<strong>Assistant Pédagogique</strong> à <strong>Epita</strong>, ma mission consistait à aider les étudiants sur leurs projets lors des permanences <strong>UNIX</strong>, en se concentrant sur le <strong>C</strong> et le <strong>Bash</strong>. Mes responsabilités incluaient de guider les étudiants dans l'implémentation de leurs projets et d'évaluer leur travail.",
   "epita-tags": [
     "C",
     "Bash",
@@ -53,7 +53,7 @@
     "UNIX",
     "Encadrement de Projets"
   ],
-  "epitech-description": "En tant qu'Assistant Pédagogique à Epitech, je faisais partie d'une équipe de six assistants chargés de guider les étudiants de première année dans leurs projets. Mes tâches incluaient l'explication des projets, la supervision des activités pédagogiques et la notation.",
+  "epitech-description": "En tant qu'<strong>Assistant Pédagogique</strong> à <strong>Epitech</strong>, je faisais partie d'une équipe de six assistants chargée de guider les étudiants de première année dans leurs projets. Mes tâches incluaient l'<strong>explication des projets</strong>, la supervision des <strong>activités pédagogiques</strong> et la <strong>notation</strong>.",
   "epitech-tags": [
     "C",
     "C++",
@@ -61,14 +61,14 @@
     "Encadrement de Projets",
     "Supervision Pédagogique"
   ],
-  "chrome-finance-description": "En tant que Développeur Frontend chez Chrome Finance, ma mission était de créer un site web pour accroître la visibilité de l'entreprise auprès de nouveaux clients. J'étais chargé de la conception du site et de l'organisation des informations pertinentes à afficher.",
+  "chrome-finance-description": "En tant que <strong>Développeur Frontend</strong> chez <strong>Chrome Finance</strong>, ma mission était de créer un site web pour accroître la visibilité de l'entreprise auprès de nouveaux clients. J'étais chargé de la <strong>conception du site</strong> et de l'<strong>organisation des informations pertinentes</strong> à afficher.",
   "chrome-finance-tags": [
     "Frontend",
     "Web Design",
     "Visibilité Client",
     "Architecture de l'Information"
   ],
-  "numendo-description": "En tant que Développeur Frontend chez Numendo, j'ai intégré une équipe de développeurs chargée de créer et de maintenir des sites web pour diverses entreprises. Mon rôle consistait à intégrer des pages web et à développer un thème WordPress personnalisé, ainsi qu'à créer une application interne pour la formation des employés.",
+  "numendo-description": "En tant que <strong>Développeur Frontend</strong> chez <strong>Numendo</strong>, j'ai intégré une équipe de développeurs chargée de créer et de maintenir des sites web pour diverses entreprises. Mon rôle consistait à <strong>intégrer des pages web</strong> et à développer un <strong>thème WordPress personnalisé</strong>, ainsi qu'à créer une <strong>application interne pour la formation des employés</strong>.",
   "numendo-tags": [
     "Frontend",
     "Vue.js",
@@ -77,7 +77,7 @@
     "Formation des Employés"
   ],
   "calendify-title": "Calendify",
-  "calendify-description": "Calendify est une application de calendrier moderne conçue pour faciliter la planification de rendez-vous. Ce projet a été développé dans le cadre d'un défi technique pour démontrer les capacités de création d'applications full-stack avec un accent sur une interface utilisateur propre et fonctionnelle et des services backend efficaces.",
+  "calendify-description": "<strong>Calendify</strong> est une application de calendrier moderne conçue pour faciliter la planification de rendez-vous. Ce projet a été développé dans le cadre d'un <strong>défi technique</strong> pour démontrer mes capacités de création d'<strong>applications full-stack</strong> avec un accent sur une <strong>interface utilisateur propre et fonctionnelle</strong> et des <strong>services backend efficaces</strong>.",
   "calendify-tags": [
     "React",
     "Node.js",
@@ -85,5 +85,8 @@
     "PostgreSQL",
     "JWT",
     "Tailwind CSS"
-  ]
+  ],
+  "project-details-visit": "Retrouvez le site web et GitHub ici : ",
+  "and": "et",
+  "project-details-website": "site web"
 }

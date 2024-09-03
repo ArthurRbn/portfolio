@@ -2,7 +2,7 @@ import React from 'react';
 import blueArrow from '/assets/illustrations/arrow_blue.svg';
 
 const SocialNetworks: React.FC = () => (
-  <div className="mt-20 mx-auto mr-auto flex flex-row max-w-[90%] xl:max-w-[50%] relative">
+  <div className="mt-12 xl:mt-20 mx-auto mr-auto flex flex-row max-w-[90%] xl:max-w-[50%] relative">
     <img src={blueArrow} className="w-auto h-4 xl:h-12 mr-4 mb-auto" alt="Decoration arrow"/>
     <div className="relative flex flex-col ">
       <div

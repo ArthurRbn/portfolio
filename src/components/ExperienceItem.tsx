@@ -1,5 +1,6 @@
 import React from 'react';
 import Tag from "./Tag.tsx";
+import {Trans} from "react-i18next";
 
 const ExperienceItem: React.FC<{ date: string, details: string, tags: string[] }> = ({ date, details, tags }) => {
   return (
@@ -11,7 +12,11 @@ const ExperienceItem: React.FC<{ date: string, details: string, tags: string[] }
         </h2>
         <div className="flex flex-col xl:flex-row">
           <div className="ml-7 xl:ml-14 mt-1 w-[75vw] xl:w-[50vw] text-justify">
-            <p className="text-primary-text text-md xl:text-lg">{details}</p>
+            <p className="text-primary-text text-md xl:text-lg">
+              <Trans>
+                {details}
+              </Trans>
+            </p>
           </div>
           <div className="flex flex-row flex-wrap content-start w-[80vw] xl:w-[30vw] mt-2 ml-7 xl:ml-2">
             {
