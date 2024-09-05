@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import Modal from "react-modal";
 import decorationArrow from "/assets/illustrations/arrow_white.svg";
 import Tag from "./Tag.tsx";
+import {Helmet} from "react-helmet-async";
 import "../style/Slider.css";
 import { useTranslation, Trans } from "react-i18next";
+import Modal from "react-modal";
+import {generateProjectJSONLD} from "../utils/StructuredData.ts";
 
 interface ProjectDetailsProps {
   name: string;
@@ -55,8 +57,34 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = (
     }
   };
 
+  const jsonLD = generateProjectJSONLD(
+    name,
+    description,
+    siteUrl,
+    githubUrl,
+    carouselURLs[0]
+  );
+
   return (
     <div className="relative p-0 xl:p-10 max-w-[90%] xl:max-w-[75%] ml-auto xl:ml-24 mr-auto mt-8 xl:mt-20">
+
+      <Helmet>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={`${name}, ${tags.join(", ")}, Web Development, Portfolio`} />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content={`${name} - Project`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={carouselURLs[0]} />
+        <meta property="og:url" content={siteUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${name} - Project`} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={carouselURLs[0]} />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLD)}
+        </script>
+      </Helmet>
+
       <div className="flex flex-col items-start">
         <div className="flex flex-row items-start">
           <img

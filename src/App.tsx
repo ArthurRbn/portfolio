@@ -12,10 +12,12 @@ import SideIllustration from "./components/SideIllustration.tsx";
 import ProjectDetails from "./components/ProjectDetails.tsx";
 import decorationArrow from "/assets/illustrations/arrow_white.svg";
 import LanguageSelector from "./components/LanguageSelector.tsx";
+import {Helmet} from "react-helmet-async";
+import {generateWebPageJSONLD} from "./utils/StructuredData.ts";
 
 interface Illustration {
   path: string;
-    styles?: string;
+  styles?: string;
 }
 
 const illustrations: Illustration[] = [
@@ -38,14 +40,52 @@ const illustrations: Illustration[] = [
 ];
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
 function App() {
   const {t} = useTranslation();
 
+  const jsonLD = generateWebPageJSONLD(
+    `${t("presentation")} - ${t("presentation_role")}`,
+    t("presentation_description"),
+    "https://arthurrobine.fr",
+    "/path-to-image.jpg"
+  );
+
   return (
     <div className="relative w-full  min-h-screen overflow-hidden mx-auto">
+      <Helmet>
+        <meta
+          name="description"
+          content={`${t("presentation")} ${t("presentation_role")} ${t("presentation_description")}`}
+        />
+        <meta
+          name="keywords"
+          content="Web Developer, Portfolio, Arthur Robine, React, SEO, Web Development"
+        />
+        <meta name="author" content="Arthur Robine"/>
+        <link rel="canonical" href="https://arthurrobine.fr"/>
+        <link rel="alternate" href="https://arthurrobine.fr/en" hrefLang="en"/>
+        <link rel="alternate" href="https://arthurrobine.fr/fr" hrefLang="fr"/>
+        <link rel="alternate" href="https://arthurrobine.fr" hrefLang="x-default"/>
+
+        <meta property="og:title" content={`${t("presentation")} - ${t("presentation_role")}`}/>
+        <meta property="og:description" content={t("presentation_description")}/>
+        <meta property="og:image" content={dotCloud1}/>
+        <meta property="og:url" content="https://arthurrobine.fr"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={`${t("presentation")} - ${t("presentation_role")}`}/>
+        <meta name="twitter:description" content={t("presentation_description")}/>
+        <meta name="twitter:image" content={dotCloud1}/>
+
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLD)}
+        </script>
+      </Helmet>
+
       {illustrations.map((item, index) => (
         <SideIllustration
           key={index}
@@ -53,15 +93,17 @@ function App() {
           styles={item.styles ?? ''}
         />
       ))}
+
       <div className="flex flex-row justify-end w-full pr-5 md:pr-10 pt-5 md:pt-10">
         <HeaderLink text={'experiences'} targetId={"experiences-section"}/>
         <HeaderLink text={'my_projects'} targetId={"projects-section"}/>
         <LanguageSelector/>
       </div>
-      <Presentation/>
 
+      <Presentation/>
       <SocialNetworks/>
       <Experiences/>
+
       <div id="projects-section">
         <ProjectDetails
           name={t('calendify-title')}
@@ -72,6 +114,7 @@ function App() {
           githubUrl={"https://github.com/ArthurRbn/Calendify"}
         />
       </div>
+
       <img
         src={decorationArrow}
         className="absolute bottom-5 xl:bottom-10 right-5 xl:right-10 w-5 xl:w-10 h-auto cursor-pointer transform -rotate-[135deg] hover:scale-125 transition-transform duration-300"

@@ -10,6 +10,7 @@ const LanguageSelector: React.FC = () => {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    window.location.pathname = `/${lng}`;
     closeMenu();
   };
 
@@ -44,7 +45,7 @@ const LanguageSelector: React.FC = () => {
 
   return (
     <div className="relative flex" ref={menuRef}>
-      <button onClick={toggleMenu} className="ml-2 sm:ml-4 lg:ml-8">
+      <button onClick={toggleMenu} className="ml-2 sm:ml-4 lg:ml-8" aria-label="Change language">
         <img
           src={switchLanguage}
           className="w-3 sm:w-5 xl:w-8 h-auto transition-transform duration-200 ease-in-out transform hover:scale-110"
