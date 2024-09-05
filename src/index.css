@@ -4,7 +4,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Import the CSS for the carousel */
 
 @font-face {
   font-family: 'Futura';

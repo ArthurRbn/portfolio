@@ -48,7 +48,7 @@ function App() {
 
   const jsonLD = generateWebPageJSONLD(
     `${t("presentation")} - ${t("presentation_role")}`,
-    t("presentation_description"),
+    t("presentation_text"),
     "https://arthurrobine.fr",
     "/path-to-image.jpg"
   );
@@ -56,13 +56,14 @@ function App() {
   return (
     <div className="relative w-full  min-h-screen overflow-hidden mx-auto">
       <Helmet>
+        <title>{`${t("presentation")} - ${t("presentation_role")}`}</title>
         <meta
           name="description"
-          content={`${t("presentation")} ${t("presentation_role")} ${t("presentation_description")}`}
+          content={`${t("presentation")} ${t("presentation_role")} ${t("presentation_text")}`}
         />
         <meta
           name="keywords"
-          content="Web Developer, Portfolio, Arthur Robine, React, SEO, Web Development"
+          content="Fullstack Developer, Portfolio, Arthur Robine, React, SEO, Web Development"
         />
         <meta name="author" content="Arthur Robine"/>
         <link rel="canonical" href="https://arthurrobine.fr"/>
@@ -71,14 +72,14 @@ function App() {
         <link rel="alternate" href="https://arthurrobine.fr" hrefLang="x-default"/>
 
         <meta property="og:title" content={`${t("presentation")} - ${t("presentation_role")}`}/>
-        <meta property="og:description" content={t("presentation_description")}/>
+        <meta property="og:description" content={t("presentation_text")}/>
         <meta property="og:image" content={dotCloud1}/>
         <meta property="og:url" content="https://arthurrobine.fr"/>
         <meta property="og:type" content="website"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title" content={`${t("presentation")} - ${t("presentation_role")}`}/>
-        <meta name="twitter:description" content={t("presentation_description")}/>
+        <meta name="twitter:description" content={t("presentation_text")}/>
         <meta name="twitter:image" content={dotCloud1}/>
 
         <script type="application/ld+json">

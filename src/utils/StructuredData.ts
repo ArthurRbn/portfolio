@@ -49,8 +49,8 @@ export const generateExperienceListJSONLD = (experiences: { date: string; detail
       "item": {
         "@type": "CreativeWork",
         "name": exp.details,
-        "startDate": exp.date.split(' - ')[0], // Extract start date
-        "endDate": exp.date.split(' - ')[1], // Extract end date
+        "startDate": exp.date.split(' - ')[0],
+        "endDate": exp.date.split(' - ')[1],
         "keywords": exp.tags.join(", "),
       }
     })),
