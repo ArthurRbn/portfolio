@@ -60,7 +60,7 @@ const Experiences: React.FC = () => {
           alt="Decoration arrow"
         />
         <h1
-          className="font-title text-primary-text text-2xl xl:text-5xl leading-4 xl:leading-10 font-medium -tracking-[0.03em] mb-8 xl:mb-12">
+          className="uppercase font-title text-primary-text text-2xl xl:text-5xl leading-4 xl:leading-10 font-medium -tracking-[0.03em] mb-8 xl:mb-12">
           {t('experiences')}
         </h1>
       </div>

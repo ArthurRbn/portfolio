@@ -28,12 +28,12 @@ const Presentation: React.FC = () => {
         />
         <div className="flex flex-col">
           <h2
-            className="font-title text-primary-text leading-4 sm:leading-10 text-xl sm:text-4xl xl:text-6xl font-bold -tracking-[0.05em] text-nowrap"
+            className="uppercase font-title text-primary-text leading-4 sm:leading-10 text-xl sm:text-4xl xl:text-6xl font-bold -tracking-[0.05em] text-nowrap"
           >
             {t('presentation')}
           </h2>
           <h3
-            className="font-title text-primary-text text-lg sm:text-3xl xl:text-5xl font-medium -tracking-[0.03em]"
+            className="uppercase font-title text-primary-text text-lg sm:text-3xl xl:text-5xl font-medium -tracking-[0.03em]"
           >
             {t('presentation_role')}
           </h3>

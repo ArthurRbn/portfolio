@@ -32,7 +32,7 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({text, targetId}) => {
       />
       <div className="relative flex">
         <span
-          className="font-normal font-title text-primary-accent leading-3 text-sm sm:leading-4 sm:text-2xl xl:leading-8 xl:text-4xl -tracking-[0.03em]">{t(text)}</span>
+          className="uppercase font-normal font-title text-primary-accent leading-3 text-sm sm:leading-4 sm:text-2xl xl:leading-8 xl:text-4xl -tracking-[0.03em]">{t(text)}</span>
         <div
           className="absolute bottom-0 left-0 w-full h-1 bg-[#5e76a3] transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
       </div>

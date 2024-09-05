@@ -56,7 +56,7 @@ function App() {
   return (
     <div className="relative w-full  min-h-screen overflow-hidden mx-auto">
       <Helmet>
-        <title>{`${t("presentation")} - ${t("presentation_role")}`}</title>
+        <title>{`Arthur Robine - ${t("presentation_role")}`}</title>
         <meta
           name="description"
           content={`${t("presentation")} ${t("presentation_role")} ${t("presentation_text")}`}
