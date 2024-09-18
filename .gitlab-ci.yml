@@ -29,7 +29,11 @@ validate:
     - terraform validate
 
 deploy:
-  image: hashicorp/terraform:1.5.6
+  image:
+    name: hashicorp/terraform:1.5.6
+    entrypoint:
+      - '/usr/bin/env'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
   stage: deploy
   script:
     - cd "${TF_ROOT}"
@@ -44,7 +48,11 @@ deploy:
     - build
 
 destroy:
-  image: hashicorp/terraform:1.5.6
+  image:
+    name: hashicorp/terraform:1.5.6
+    entrypoint:
+      - '/usr/bin/env'
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
   stage: cleanup
   script:
     - cd terraform
