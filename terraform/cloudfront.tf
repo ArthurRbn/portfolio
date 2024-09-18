@@ -9,6 +9,7 @@ resource "aws_cloudfront_origin_access_identity" "this" {
 
 resource "aws_cloudfront_distribution" "this" {
   enabled = true
+  default_root_object = "index.html"
 
   origin {
     origin_id   = local.s3_origin_id
