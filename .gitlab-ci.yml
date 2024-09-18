@@ -38,6 +38,7 @@ deploy:
   script:
     - apk add --no-cache python3 py3-pip
     - pip install awscli
+    - cd terraform
     - terraform init
     - terraform apply -auto-approve -var "s3_name=${S3_NAME}" -var "region=${REGION}"
     - aws s3 sync dist/ s3://$S3_NAME --delete --region $REGION
