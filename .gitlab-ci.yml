@@ -36,11 +36,10 @@ deploy:
       - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
   stage: deploy
   script:
-    - cd terraform
-    - terraform init
-    - terraform apply -auto-approve -var "s3_name=${S3_NAME}"
     - apk add --no-cache python3 py3-pip
     - pip install awscli
+    - terraform init
+    - terraform apply -auto-approve -var "s3_name=${S3_NAME}" -var "region=${REGION}"
     - aws s3 sync dist/ s3://$S3_NAME --delete --region $REGION
   environment:
     name: production
