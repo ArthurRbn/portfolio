@@ -24,7 +24,7 @@ validate:
       - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
   stage: validate
   script:
-    - cd /terraform
+    - cd terraform
     - terraform init
     - terraform validate
 
@@ -47,6 +47,6 @@ destroy:
   image: hashicorp/terraform:1.5.6
   stage: cleanup
   script:
-    - cd /terraform
+    - cd terraform
     - terraform destroy -auto-approve -var "s3_name=${S3_NAME}"
   when: manual
