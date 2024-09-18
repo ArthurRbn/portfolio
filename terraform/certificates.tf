@@ -1,4 +1,5 @@
 resource "aws_acm_certificate" "this" {
+  provider          = aws.us_east_1
   domain_name       = "www.arthurrobine.fr"
   validation_method = "DNS"
 
