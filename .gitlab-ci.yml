@@ -36,7 +36,7 @@ deploy:
       - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
   stage: deploy
   script:
-    - cd "${TF_ROOT}"
+    - cd terraform
     - terraform init
     - terraform apply -auto-approve -var "s3_name=${S3_NAME}"
     - apk add --no-cache python3 py3-pip
