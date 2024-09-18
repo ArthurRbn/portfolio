@@ -23,7 +23,7 @@ interface Illustration {
 const illustrations: Illustration[] = [
   {
     path: dotCloud1,
-    styles: 'top-5 md:top-10 left-5 md:left-10 max-w-[19%] md:max-w-[22%] 2xl:max-w-[15%] h-auto'
+    styles: 'top-5 md:top-10 left-5 md:left-10 max-w-[16%] md:max-w-[21%] 2xl:max-w-[15%] h-auto'
   },
   {
     path: flowers,
