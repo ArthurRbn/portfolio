@@ -1,44 +1,46 @@
-include:
-  - template: Terraform/Base.gitlab-ci.yml
-
 stages:
   - validate
   - build
   - deploy
   - cleanup
 
-variables:
-  TF_STATE_NAME: dev-tf-state
-  TF_CACHE_KEY: dev-tf-cache
-  TF_ROOT: terraform
+build:
+  image: node:21.7.0
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+  only:
+    - main
 
 validate:
-  extends: .terraform:validate
-
-build:
-  extends: .terraform:build
+  image: hashicorp/terraform:1.5.6
+  stage: validate
   script:
     - cd "${TF_ROOT}"
-    - gitlab-terraform plan
-      -var "s3_name=${S3_NAME}"
-    - gitlab-terraform plan-json
+    - terraform init
+    - terraform validate
 
 deploy:
-  extends: .terraform:deploy
-  environment:
-    name: $TF_STATE_NAME
-    on_stop: destroy
-  dependencies:
-    - build
-  rules:
-    - when: always
-
-destroy:
-  extends: .terraform:destroy
-  environment:
-    name: $TF_STATE_NAME
-    action: stop
+  image: hashicorp/terraform:1.5.6
+  stage: deploy
   script:
     - cd "${TF_ROOT}"
-    - gitlab-terraform destroy
-      -var "s3_name=${S3_NAME}"
+    - terraform init
+    - terraform apply -auto-approve -var "s3_name=${S3_NAME}"
+    - aws s3 sync dist/ s3://$S3_NAME --delete --region $REGION
+  environment:
+    name: production
+  dependencies:
+    - build
+
+destroy:
+  image: hashicorp/terraform:1.5.6
+  stage: cleanup
+  script:
+    - cd "${TF_ROOT}"
+    - terraform destroy -auto-approve -var "s3_name=${S3_NAME}"
+  when: manual
