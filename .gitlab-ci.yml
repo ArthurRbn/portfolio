@@ -41,6 +41,7 @@ deploy:
     - cd terraform
     - terraform init
     - terraform apply -auto-approve -var "s3_name=${S3_NAME}" -var "region=${REGION}"
+    - cd ..
     - aws s3 sync dist/ s3://$S3_NAME --delete --region $REGION
   environment:
     name: production
