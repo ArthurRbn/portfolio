@@ -10,6 +10,7 @@ resource "aws_cloudfront_origin_access_identity" "this" {
 resource "aws_cloudfront_distribution" "this" {
   enabled = true
   default_root_object = "index.html"
+  aliases = ["www.example.com"]
 
   origin {
     origin_id   = local.s3_origin_id
@@ -44,7 +45,9 @@ resource "aws_cloudfront_distribution" "this" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate.this.arn
+    ssl_support_method   = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2019"
   }
 
   price_class = "PriceClass_200"
