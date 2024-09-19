@@ -11,3 +11,10 @@ resource "aws_acm_certificate" "this" {
 output "acm_validation_dns" {
   value = aws_acm_certificate.this.domain_validation_options
 }
+
+data "aws_acm_certificate" "this" {
+  domain   = "www.arthurrobine.fr"
+  statuses = ["ISSUED"]
+  most_recent = true
+  provider = aws.us_east_1
+}
