@@ -76,6 +76,26 @@ npm run build
 
 The production-ready files will be generated in the `dist/` folder.
 
+## Architecture and Deployment
+
+This portfolio project uses Terraform and GitLab CI/CD to automate the infrastructure deployment on AWS. The architecture is designed to be scalable and includes the following components:
+
+### Key Components
+- **AWS S3**: Hosts the static frontend assets.
+- **AWS CloudFront**: Serves the frontend globally using a CDN for faster load times and SSL termination with ACM.
+- **AWS ACM**: Manages SSL certificates for HTTPS.
+- **Terraform**: Used to provision AWS infrastructure, including S3, CloudFront, and ACM, with modular configuration files for common resources and frontend deployment.
+
+### CI/CD Pipeline
+
+The GitLab CI/CD pipeline automates the entire deployment process:
+1. **Validation Stage**: Runs `terraform init` and `terraform validate` to ensure the infrastructure configurations are correct.
+2. **Build Stage**: Uses Node.js to install dependencies and build the frontend using Vite.
+3. **Deployment Stage**: Executes `terraform apply` to provision AWS resources and upload the frontend assets to the S3 bucket.
+4. **Optional Destroy Stage**: Runs `terraform destroy` to clean up resources if needed.
+
+This setup ensures that the infrastructure is managed efficiently and that changes are deployed smoothly via GitLab’s pipeline. The Terraform configuration is modular, making it easier to add more components like backend services or databases in the future.
+
 ## Project Structure
 
 ```bash
@@ -93,6 +113,15 @@ The production-ready files will be generated in the `dist/` folder.
 │   ├── sitemap.xml     # Sitemap for search engines
 │   ├── assets          # Static images, icons, etc.
 │   └── locales         # Language translations (EN/FR JSON files)
+├── terraform
+│   ├── backend.tf      # S3 backend configuration for Terraform state
+│   ├── cloudfront.tf   # CloudFront CDN configuration
+│   ├── certificates.tf # ACM SSL certificate configuration
+│   ├── providers.tf    # AWS provider configuration
+│   ├── s3.tf           # S3 bucket for frontend hosting
+│   ├── variables.tf    # Variables used across Terraform modules
+│   └── version.tf      # Specifies the required Terraform version
+├── .gitlab-ci.yml      # CI/CD pipeline configuration for GitLab
 ├── README.md           # This README file
 ├── package.json        # Project dependencies and scripts
 ├── postcss.config.js   # PostCSS configuration

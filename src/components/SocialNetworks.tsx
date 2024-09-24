@@ -33,6 +33,14 @@ const SocialNetworks: React.FC = () => (
         <div
           className="absolute bottom-0 left-0 w-full h-1 bg-[#5e76a3] transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
       </a>
+      <a href="https://gitlab.com/ArthurRbn" target="_blank" rel="noopener noreferrer"
+         className="relative group w-min hover:cursor-pointer">
+        <h1 className="font-title text-primary-accent text-xl xl:text-4xl font-bold -tracking-[0.03em] mt-0 xl:mt-2">
+          GitLab
+        </h1>
+        <div
+          className="absolute bottom-0 left-0 w-full h-1 bg-[#5e76a3] transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
+      </a>
     </div>
   </div>
 );
