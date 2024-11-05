@@ -57,5 +57,6 @@ destroy:
   stage: cleanup
   script:
     - cd terraform
+    - terraform init
     - terraform destroy -auto-approve -var "s3_name=${S3_NAME}"
   when: manual
