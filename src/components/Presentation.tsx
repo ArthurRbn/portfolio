@@ -45,7 +45,7 @@ const Presentation: React.FC = () => {
         </div>
       </div>
       <p
-        className="text-primary-text text-base sm:text-2xl xl:text-3xl font-medium w-[90%] xl:w-[75%] text-justify mx-auto my-8 xl:my-20">
+        className="translated-text text-primary-text text-base sm:text-2xl xl:text-3xl font-medium w-[90%] xl:w-[75%] text-justify mx-auto my-8 xl:my-20">
         <Trans i18nKey='presentation_description'/>
       </p>
     </>

@@ -12,7 +12,7 @@ const ExperienceItem: React.FC<{ date: string, details: string, tags: string[] }
         </h2>
         <div className="flex flex-col xl:flex-row">
           <div className="ml-7 xl:ml-14 mt-1 w-[75vw] xl:w-[50vw] text-justify">
-            <p className="text-primary-text text-md xl:text-lg">
+            <p className="translated-text text-primary-text text-md xl:text-lg">
               <Trans>
                 {details}
               </Trans>

@@ -85,7 +85,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = (
           </h1>
         </div>
         <div className="ml-2 xl:ml-6 relative flex flex-row items-start w-[80vw]">
-          <p className="ml-7 xl:ml-8 text-primary-text text-lg text-justify">
+          <p className="translated-text ml-7 xl:ml-8 text-primary-text text-lg text-justify">
             <Trans>
               {description}
             </Trans>
