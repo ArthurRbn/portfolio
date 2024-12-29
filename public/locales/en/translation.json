@@ -4,9 +4,9 @@
   "experiences": "Experiences",
   "my_projects": "My projects",
   "presentation": "Hi ! I'm Arthur Robine",
-  "presentation_role": "Web Developer",
-  "presentation_text": "I create elegant web solutions with a focus on simplicity and functionality.",
-  "presentation_description": "I see web development as an opportunity to solve <strong>real-world problems</strong> by creating effective and accessible solutions. My varied experiences have taught me to <strong>adapt</strong> to the specific needs of each project and to commit to continuously improving my skills. I enjoy exploring new technologies to stay current and deliver <strong>modern solutions</strong> tailored to each challenge.",
+  "presentation_role": "DevOps Engineer | Fullstack Developer",
+  "presentation_text": "DevOps Engineer and fullstack developer, I design secure and high-performance cloud infrastructures.",
+  "presentation_description": "Graduated from <strong>Epitech</strong>, I gained solid experience in <strong>web development</strong> before specializing in <strong>DevOps</strong>. Currently, I design and maintain <strong>high-performance cloud infrastructures</strong> at <strong>Atyos</strong> using <strong>AWS</strong> services. Passionate about <strong>innovation</strong>, I thrive in ambitious and collaborative projects.",
   "jan": "January",
   "feb": "February",
   "mar": "March",
@@ -20,6 +20,15 @@
   "nov": "November",
   "dec": "December",
   "currently": "Currently",
+  "atyos-description": "As a <strong>DevOps Engineer</strong> at <strong>Atyos</strong>, I design and implement <strong>deployment processes</strong> for both <strong>traditional</strong> and <strong>cloud-native applications</strong>. I contribute to <strong>infrastructure evolution</strong>, assist clients in adopting <strong>AWS cloud</strong> technologies, and help them grow their skills through <strong>technical training</strong>. Passionate about <strong>technological trends</strong>, I am committed to building secure and high-performance solutions.",
+  "atyos-tags": [
+    "DevOps Engineer",
+    "AWS",
+    "Cloud Native",
+    "Infrastructure as Code",
+    "Technical Training",
+    "Application Deployment"
+  ],
   "teaching-assistant-description": "As a <strong>Pedagogical Coordinator</strong> at Epitech Strasbourg, I am responsible for guiding first, second, and third-year students. My role includes <strong>supervising pedagogical activities</strong> and <strong>grading projects.</strong>",
   "teaching-assistant-tags": [
     "Pedagogical Supervision",

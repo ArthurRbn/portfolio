@@ -10,7 +10,12 @@ const Experiences: React.FC = () => {
 
   const experiences = [
     {
-      date: `${t('apr')} 2024 - ${t('currently')}`,
+      date: `${t('dec')} 2024 - ${t('currently')}`,
+      details: t('atyos-description'),
+      tags: t('atyos-tags', { returnObjects: true }) as string[]
+    },
+    {
+      date: `${t('apr')} 2024 - ${t('oct')} 2024`,
       details: t('teaching-assistant-description'),
       tags: t('teaching-assistant-tags', { returnObjects: true }) as string[]
     },

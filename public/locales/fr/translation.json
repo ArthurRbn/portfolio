@@ -4,9 +4,9 @@
   "experiences": "Expériences",
   "my_projects": "Mes projets",
   "presentation": "Salut ! Je suis Arthur Robine",
-  "presentation_role": "Développeur web",
-  "presentation_text": "Je créé des solutions web élégantes avec un souci de simplicité et de fonctionnalité.",
-  "presentation_description": "Je considère le développement web comme une opportunité de résoudre des <strong>problèmes concrets</strong> en créant des solutions <strong>efficaces</strong> et <strong>accessibles</strong>. Grâce à mes expériences variées, j'ai appris à <strong>m'adapter</strong> aux besoins spécifiques de chaque projet et à m'engager pleinement dans l'amélioration continue de mes compétences. J'aime explorer de nouvelles technologies pour rester à jour et proposer des <strong>solutions modernes</strong>, adaptées à chaque défi.",
+  "presentation_role": "Ingénieur DevOps | Développeur Web",
+  "presentation_text": "Ingénieur DevOps et développeur fullstack, je conçois des infrastructures cloud performantes et sécurisées.",
+  "presentation_description": "Diplômé d'<strong>Epitech</strong>, j'ai acquis une solide expérience en <strong>développement web</strong> avant de me spécialiser en <strong>DevOps</strong>. Actuellement, je conçois et maintiens des <strong>infrastructures cloud</strong> performantes et sécurisées chez <strong>Atyos</strong>, en utilisant les services <strong>AWS</strong>. Passionné par l'<strong>innovation</strong>, je m'épanouis dans des projets ambitieux et collaboratifs.",
   "jan": "Janvier",
   "feb": "Février",
   "mar": "Mars",
@@ -20,6 +20,15 @@
   "nov": "Novembre",
   "dec": "Décembre",
   "currently": "Aujourd'hui",
+  "atyos-description": "En tant qu'<strong>Ingénieur DevOps</strong> chez <strong>Atyos</strong>, je conçois et mets en œuvre des <strong>processus de déploiement</strong> pour des applications <strong>traditionnelles</strong> et <strong>cloud-native</strong>. Je contribue à l'<strong>évolution des infrastructures</strong>, accompagne les clients dans leur adoption du <strong>cloud AWS</strong> et favorise leur montée en compétences grâce à des <strong>formations techniques</strong>. Passionné par les <strong>tendances technologiques</strong>, je m'engage à construire des solutions performantes et sécurisées.",
+  "atyos-tags": [
+    "Ingénieur DevOps",
+    "AWS",
+    "Cloud Native",
+    "Infrastructure as Code",
+    "Formation Technique",
+    "Déploiement d'Applications"
+  ],
   "teaching-assistant-description": "En tant que <strong>Accompagnateur Pédagogique</strong> à Strasbourg, je suis responsable du suivi des étudiants de première, deuxième et troisième année. Mon rôle inclut l'<strong>encadrement des activités pédagogiques</strong> et la <strong>notation des projets</strong>.",
   "teaching-assistant-tags": [
     "Encadrement Pédagogique",
